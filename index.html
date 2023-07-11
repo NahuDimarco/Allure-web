@@ -1,3 +1,9 @@
+
+<!--vi como hacerlo responsive, es la primera vez que uso javasript entonces me costo entender,
+hay cosas que todavia no me cierran y cosas que se que estan mal pero tengo que ver como solucionarlas,
+como por ejemplo cuando se cierra el menu, no tengo animacion, solo cuando se abre, tambien hay un margen de px cuando se hace chico que se descuarajinga el texto,
+pero supongo que como la medida es de 800 px o menos para que se muestre el menu mobile, nunca se llega a ver, de igual forma lo tengo que solucionar-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +16,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="LOGO ALLURE.png">
+            <img src="imagenes/logo allure.png">
         </div>
         <nav>
            <ul class="nav-links">
@@ -20,6 +26,30 @@
            </ul>            
         </nav>
         <a class="btn" href="#"><button>Deja tu consulta a nuestro chatbot</button></a>
+
+        <a onclick="openNav()" class="menu" href="#"> <button>Menu</button></a>
+
+        <div class="overlay" id="mobile-menu">
+            <a onclick="closeNav()" href="" class="close">&times;</a>
+            <div class="overlay-content">
+                <a href="#">Servicios</a>
+                <a href="#">Contactanos</a>
+                <a href="#">Sobre nosotros</a>
+                <a href="#">Consulta a nuestro chatbot</a>
+            </div>
+        </div>
     </header>
+
+    <script type="text/javascript" src="script.js"></script>
+
+    <div>
+        <h1 class="title1">
+            Galeria
+        </h1>
+    </div>
+
+    <section>
+        <img src=>
+    </section>
 </body>
 </html>
